@@ -20,6 +20,7 @@
 		  <table class="table table-condensed table-hover table-bordered" wi>
 			  <thead>
 			  	<tr>
+					<th class="col-sm-1">#</th>
 					<th class="col-sm-2">Name</th>
 					<th class="col-sm-2">Relationship</th>
 					<th class="col-sm-3">Nickname</th>
@@ -27,6 +28,7 @@
 				</tr>
 			  </thead>
 			  <tr ng-repeat="person in appCtrl.family">
+				  <td>{{$index+1}}</td>
 				  <td>{{person.fullname}}</td>
 				  <td>{{person.relationship}}</td>
 				  <td>{{person.nickname}}</td>
